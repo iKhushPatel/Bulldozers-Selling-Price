@@ -54,7 +54,7 @@ for i in df.saledate:
     delta = x - l_date
     total_days.append(delta.days)
 
-df['saledate'] = total_days
+df['SaleDate'] = total_days
 fields = list(df.columns)
 df.to_csv('NewDataset.csv',index=False)
 
